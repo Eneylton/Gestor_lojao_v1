@@ -21808,7 +21808,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   color: #495057;
 }
 
-.login-page,
+#e9ecef,
 .register-page {
   -ms-flex-align: center;
   align-items: center;

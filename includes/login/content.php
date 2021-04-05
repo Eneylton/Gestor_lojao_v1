@@ -9,7 +9,7 @@ $alertaCadastro  = strlen($alertaCadastro) ? '<div class="alert alert-danger">'.
         <a href="assets/index2.html" class="h1"><b>Lojão </b>Carro</a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg"><img src="01.png" style="width: 200px; height:70px"></p>
+        <p class="login-box-msg"><img src="imgs/logo1.jpg" style="width: 200px; height:70px"></p>
         <?= $alertaLogin  ?>
 
         <form action="" method="post">
