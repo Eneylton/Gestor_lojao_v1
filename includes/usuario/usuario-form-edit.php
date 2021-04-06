@@ -1,5 +1,23 @@
+<div class="content-wrapper" style="margin-top: 60px;">
+
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0"><?=TITLE?></h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active"><?=BRAND?></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <section class="content">
-     <div class="container-fluid">
+   <div class="container-fluid">
           <div class="row">
                <div class="col-6">
                     <form method="post">
@@ -16,8 +34,6 @@
                               </div>
                               <!-- /.card-header -->
                               <div class="card card-primary">
-
-                                  
 
                                    <div class="alert alert-info alert-dismissible fade show" role="alert">
                                    <strong> <?= $alertaCadastro ?></strong> Por favor digite um nova senha !!!!

@@ -1,4 +1,4 @@
-070345<?php
+<?php
 
 $listProdutos = '';
 $resultados   = '';

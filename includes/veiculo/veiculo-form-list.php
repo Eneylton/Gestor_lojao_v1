@@ -6,15 +6,15 @@ foreach ($usuarios as $item) {
 
    $resultados .= '<tr>
                       <td>' . $item->id . '</td>
-                      <td>' . $item->nome . '</td>
-                      <td>' . $item->email . '</td>
+                      <td style="text-transform:uppercase">' . $item->nome . '</td>
+                      <td style="text-transform:uppercase">OOK</td>
                       <td style="text-align: center;">
                         
-                       <a href="usuario-edit.php?id=' . $item->id . '">
+                       <a href="veiculo-edit.php?id=' . $item->id . '">
                          <button type="button" class="btn btn-primary"> <i class="fas fa-paint-brush"></i> </button>
                        </a>
 
-                       <a href="usuario-delete.php?id=' . $item->id . '">
+                       <a href="veiculo-delete.php?id=' . $item->id . '">
                        <button type="button" class="btn btn-danger"> <i class="fas fa-trash"></i></button>
                        </a>
 
@@ -78,8 +78,8 @@ foreach ($paginas as $key => $pagina) {
                      <div class="row my-7">
                         <div class="col">
 
-                           <label>Buscar por Nome / Email</label>
-                           <input type="text" class="form-control" name="buscar" value="<?= $buscar ?>">
+                           <label>Buscar por nome do veiculo</label>
+                           <input type="text" class="form-control" name="buscar" value="<?= $buscar ?>" autofocus>
 
                         </div>
 
@@ -111,18 +111,18 @@ foreach ($paginas as $key => $pagina) {
 
                   <div class="col d-flex align-items-end">
 
-                     <a href="usuario-insert.php">
-                        <button type="submit" class="btn btn-success"> <i class="fas fa-plus"></i> Adicionar Novo Usuário</button>
+                     <a href="veiculo-insert.php">
+                        <button type="submit" class="btn btn-success"> <i class="fas fa-plus"></i> Adicionar Novo veículo</button>
                      </a>
 
                   </div>
                   <br>
-                  <table id="example1" class="table table-bordered table-hover table-striped">
+                  <table class="table table-head-fixed table-dark table-striped table-hover">
                      <thead>
                         <tr>
                            <th> ID </th>
-                           <th> NOME </th>
-                           <th> EMAIL </th>
+                           <th> VEÍCULOS </th>
+                           <th> MARCAS </th>
                            <th style="text-align: center;"> AÇÃO </th>
                         </tr>
                      </thead>

@@ -12,12 +12,12 @@ Login::requireLogin();
 
 
 
-include __DIR__.'/includes/header.php';
-include __DIR__.'/includes/top.php';
-include __DIR__.'/includes/menu.php';
-include __DIR__.'/includes/content.php';
-include __DIR__.'/includes/box-infor.php';
-include __DIR__.'/includes/footer.php';
+include __DIR__.'/includes/layout/header.php';
+include __DIR__.'/includes/layout/top.php';
+include __DIR__.'/includes/layout/menu.php';
+include __DIR__.'/includes/layout/content.php';
+include __DIR__.'/includes/layout/box-infor.php';
+include __DIR__.'/includes/layout/footer.php';
 
 
 ?>

@@ -36,14 +36,14 @@ class Usuario{
 
     }
 
-public static function getVagas($where = null, $order = null, $limit = null){
+public static function getUsuarios($where = null, $order = null, $limit = null){
 
     return (new Database ('usuarios'))->select($where,$order,$limit)
                                    ->fetchAll(PDO::FETCH_CLASS, self::class);
 
 }
 
-public static function getQuantidadeVagas($where = null){
+public static function getQtdUsuarios($where = null){
 
     return (new Database ('usuarios'))->select($where,null,null,'COUNT(*) as qtd')
                                    ->fetchObject()
@@ -52,7 +52,7 @@ public static function getQuantidadeVagas($where = null){
 }
 
 
-public static function getVagasID($id){
+public static function getUsuariosID($id){
     return (new Database ('usuarios'))->select('id = ' .$id)
                                    ->fetchObject(self::class);
  
@@ -81,5 +81,13 @@ public static function getUsuarioPorEmail($email){
     return (new Database ('usuarios'))->select('email = "'.$email.'"')-> fetchObject(self::class);
 
 }
+
+public static function getUsuarioPdf(){
+
+    return (new Database ('usuarios'))->pdf($where = null)
+                                   ->fetchAll(PDO::FETCH_CLASS, self::class);
+
+}
+
 
 }
